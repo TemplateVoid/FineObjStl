@@ -7,7 +7,7 @@
 __attribute__ ((visibility ("default")))
 void foo()
 {
-	std::string s1 = "hui";
-	FObj::CString s2 = "hui";
+	std::string s1 = "huijhkjhjkhsakjdhajkshdkjashdkjashkdjaks";
+	FObj::CString s2 = "huidashgdjhasgjhdgashdgjsahgdjhsagjdhgasjhdgasgdj";
 	std::cout << s1 + s2.Ptr() << "\n";
 }

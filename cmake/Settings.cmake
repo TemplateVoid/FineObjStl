@@ -84,8 +84,6 @@ function(configure_target TARGET_NAME)
     endif()
 endfunction()
 
-if(USE_FINE_OBJECTS)
-
     function(fine_unexport_symbols TARGET_NAME)
         get_target_property(TARGET_TYPE ${TARGET_NAME} TYPE)
         if(TARGET_TYPE STREQUAL "SHARED_LIBRARY")
@@ -118,5 +116,3 @@ if(USE_FINE_OBJECTS)
             endif()
         endif()
     endfunction()
-
-endif()
